@@ -1,0 +1,111 @@
+.basic-service {
+    margin: 30px 0;
+  .card-content {
+    padding: 0 15px 30px;
+    transition: all 0.3s linear;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: $box-shadow-color-card;
+    border: 0;
+    &:hover {
+      box-shadow: 0px 20px 50px 0px rgb(153 153 153 / 50%);
+      transform: translateY(-10px);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      border-left: 2px solid #56b665;
+      border-top: 2px solid #56b665;
+      width: 80px;
+      height: 60px;
+      left: 0;
+      top: 0;
+      transition: 0.5s;
+      border-radius: 30px 0px;
+    }
+    &:hover::before {
+      width: 90%;
+      height: 90%;
+      border-left: 2px solid #56b665;
+      border-top: 2px solid #56b665;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-right: 2px solid #56b665;
+      border-bottom: 2px solid #56b665;
+      width: 80px;
+      height: 60px;
+      right: 0;
+      bottom: 0;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      border-radius: 30px 0px;
+    }
+    &:hover::after {
+      width: 90%;
+      height: 90%;
+      border-right: 2px solid #56b665;
+      border-bottom: 2px solid #56b665;
+    }
+    .card-header {
+      background: none;
+      border-bottom: none;
+      .title {
+        background: $white-color;
+        border-bottom: none;
+        padding-top: 50px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #111;
+      }
+      span {
+        color: $bg-btn-banner;
+        padding: 0.3em 15% 0;
+        font-weight: $font-weight-300;
+        font-size: 55px;
+        @media (max-width:768px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        padding: 15px 15px 0;
+        font-size: 16px;
+        color: $text-card-color;
+      }
+    }
+    .card-body {
+      height: 300px;
+      padding: 8px 0;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 20px;
+      ul {
+        li {
+          list-style: none;
+          display: block;
+          font-size: 14px;
+          color: $text-card-color;
+          height: 30px;
+        }
+      }
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin: 30px 0;
+      font-weight: $font-weight-100;
+      color: #111;
+      cursor: pointer;
+      z-index: 1;
+      span {
+        padding: 12px 24px;
+        font-size: 20px;
+        border-radius: 50px;
+        background: #f6f6f6 !important;
+        &:hover{
+            background: #56b665!important;
+            color: $white-color;
+        }
+      }
+    }
+  }
+}

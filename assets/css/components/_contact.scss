@@ -1,0 +1,23 @@
+.contact {
+  background-color: $bg-contact;
+  .contact-content {
+    padding-top: 30px;
+    display: flex;
+    .logo-content {
+      width: 50px;
+    }
+    .text-content {
+      padding-left: 16px;
+      h3 {
+        color: #80888a;
+        font-size: 20px;
+        font-weight: $font-weight-100;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 16px;
+        color: $white-color !important;
+      }
+    }
+  }
+}

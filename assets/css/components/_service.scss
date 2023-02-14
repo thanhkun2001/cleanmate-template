@@ -1,0 +1,100 @@
+.section-service {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $bg-service;
+  .slick-next,
+  .slick-prev {
+    opacity: 0;
+    &::before {
+      margin: 0;
+      padding: 0;
+      width: 36px;
+      border: none;
+      cursor: pointer;
+      color: $bg-btn-banner;
+      font-size: 36px;
+      background-color: transparent;
+    }
+  }
+  .slick-initialized .slick-slide {
+    margin: 0 15px 0 0;
+  }
+  .slick-next {
+    right: -75px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .slick-prev {
+    left: -90px;
+    transform: translateX(20%);
+    &:hover {
+      opacity: 1;
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+  .card-content-service {
+    background: $bg-card;
+    transition: all 0.3s linear;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    }
+  }
+  &:hover {
+    .slick-next,
+    .slick-prev {
+      opacity: 0.2;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .card-image-service {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    &:hover {
+      transform: none;
+      box-shadow: none;
+      .box-text-inner {
+        opacity: 1;
+        transform: scale(1) translateZ(0) translateY(-50%) !important;
+      }
+    }
+    .box-text-inner {
+      opacity: 0;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      bottom: auto !important;
+      z-index: 16;
+      left: 0;
+      right: 0;
+      h4 {
+        font-size: 18px;
+        color: $ez-white-color;
+        font-weight: $font-weight-100;
+      }
+      a {
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: $ez-white-color;
+        font-weight: $font-weight-100;
+        line-height: 30px;
+        border-radius: 50px;
+        border: 1px solid $ez-white-color;
+        text-transform: uppercase;
+        background: transparent;
+        padding: 8px 16px;
+        &:hover{
+            background: $bg-btn-banner;
+        }
+      }
+    }
+  }
+}

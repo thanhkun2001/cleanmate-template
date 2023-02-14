@@ -1,0 +1,30 @@
+.card-text-inner {
+  h4 {
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: $font-weight-700;
+    a {
+      color: $color-title-h2 !important;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .line-bottom-small {
+    display: block;
+    content: "";
+    background: #56b665;
+    width: 30px;
+    height: 2px;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    font-family: $font-family-p;
+    font-size: 14px;
+    color: $color-title-p;
+    padding: 30px;
+  }
+}
