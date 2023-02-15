@@ -222,6 +222,9 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.banner-main .banner-main-inner {
+  padding: 60px 0;
+}
 
 .banner-main-2 {
   background-image: url(../images/background/image_02-7.jpg);
@@ -862,6 +865,14 @@ body {
 .show-index {
   z-index: 9999;
   padding: 0 !important;
+}
+
+.text-p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 40px;
 }
 
 .show-logo {
