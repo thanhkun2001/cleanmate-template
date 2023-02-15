@@ -1,0 +1,18 @@
+.section-content-introduce{
+    .content-introduce {
+        padding: 30px;
+        .content-title {
+          line-height: 30px;
+          h3 {
+            font-size: 24px;
+            color: $color-title-h2;
+            font-weight: 500;
+          }
+          p {
+            font-size: 18px;
+            color: $color-title-p;
+            font-weight: 100;
+          }
+        }
+      }
+}

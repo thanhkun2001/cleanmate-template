@@ -79,27 +79,73 @@
   background-attachment: fixed;
   .introduce-content {
     padding-top: 60px;
-  }
-  .sliderr-text {
-    h3 {
-      font-size: 20px;
-      color: $white-color;
-      line-height: 30px;
+    h5 {
+      font-size: 18px;
+      color: $color-title-h2;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      color: $color-title-p;
+      font-weight: 100;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
   .content {
+    .slick-next,
+    .slick-prev {
+      opacity: 0;
+      &::before {
+        margin: 0;
+        padding: 0;
+        width: 36px;
+        border: none;
+        cursor: pointer;
+        color: $bg-btn-banner;
+        font-size: 36px;
+        background-color: transparent;
+      }
+    }
+    .slick-initialized .slick-slide {
+      margin: 0 15px 0 0;
+    }
+    .slick-next {
+      right: -75px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .slick-prev {
+      left: -90px;
+      transform: translateX(20%);
+      &:hover {
+        opacity: 1;
+      }
+    }
     padding: 120px 0;
     line-height: 30px;
+    &:hover {
+      .slick-next,
+      .slick-prev {
+        opacity: 0.2;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
     h3 {
       font-size: 20px;
       font-weight: 100;
       color: $white-color;
       line-height: 30px;
+      margin-bottom: 30px;
     }
-    h6{
+    h6 {
       color: $white-color;
       font-weight: $font-weight-700;
       font-size: 12px;
+      text-transform: uppercase;
     }
   }
 }

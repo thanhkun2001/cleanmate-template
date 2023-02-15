@@ -14,7 +14,7 @@
   .line-bottom-small {
     display: block;
     content: "";
-    background: #56b665;
+    background: $bg-btn-banner;
     width: 30px;
     height: 2px;
     margin-top: 23px;
@@ -25,6 +25,6 @@
     font-family: $font-family-p;
     font-size: 14px;
     color: $color-title-p;
-    padding: 30px;
+    padding: 30px 0;
   }
 }
